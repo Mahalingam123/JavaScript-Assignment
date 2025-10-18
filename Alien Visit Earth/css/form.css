@@ -1,0 +1,246 @@
+#loading {
+
+    height: 120%;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    bottom: 0px;
+
+    right: 0px;
+
+
+}
+
+h1{
+   
+    font-family: "Playfair Display", serif;
+
+    color: #0796f5;
+
+    font-size: 38px;
+
+    position: relative;
+     
+    left: 20PX;
+
+    border: #3498db;
+
+    transition: 0.6s ease-in-out;
+
+    margin-bottom: 40px;
+
+    text-shadow: 2px 2px 12px rgb(0, 140, 255);
+     
+}
+
+h1:hover{
+    transform: scale(1.02);
+}
+
+body {
+
+    background-image: url("/img/dark-planet-space-landscape.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: 10cqmin;
+
+    background-position: top;
+
+    zoom: 93%;
+
+}
+
+.label {
+
+    color: rgba(255, 255, 255, 0.986);
+
+    cursor: pointer;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    position: relative;
+
+    left: -110px;
+
+    justify-content: center;
+
+    text-shadow: 2px 3px 15px rgb(32, 156, 194);
+
+    font-variant: small-caps;
+
+
+}
+
+#formDiv {
+
+    position: absolute;
+
+    background: rgba(20, 35, 60, 0.192);
+
+    opacity: 0.8;
+
+    height: 600px;
+
+    width: 430px;
+
+    left: 450px;
+
+    top: 40px;
+
+    overflow: auto;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    border-radius: 15px;
+
+    box-shadow: 1px 1px 14px rgb(220, 218, 218);
+
+    transition: transform 0.5s ease-in;
+
+    padding: 15px 30px;
+
+    border: 2px solid #3498db;
+
+    backdrop-filter: blur(1px);
+
+    text-align: center;
+
+    transition: transform 1s ease-in;
+
+}
+#formDiv:hover{
+      transform: scale(1.08);
+
+    box-shadow: 1px 1px 14px rgb(68, 245, 242);
+      
+}
+
+
+.group {
+   
+    display: flex;
+
+    flex-direction: column;
+
+    position: relative;
+
+    width: 400px;
+
+    margin-bottom: 20px;
+
+    bottom: 15px;
+
+    left: -18PX;
+ 
+
+}
+
+.inputs {
+
+    height: 33px;
+
+    width: 350px;
+
+    border-radius: 7px;
+
+    position: relative;
+
+    left: 40px;
+
+    transition: transform 0.5s;
+
+    border: 0.5px solid blue;
+
+    box-shadow: 1px 2px 13px rgb(83, 196, 224);
+
+    background:rgb(255, 246, 246);
+
+    opacity: 0.8;
+
+}
+
+.inputs:hover {
+    transform: scale(1.03);
+
+    box-shadow: 1px 2px 13px rgb(216, 197, 55);
+
+}
+
+.inputs:focus{
+    box-shadow: 1px 2px 13px rgb(237, 236, 228);
+    border: none;
+    font-size: 10px;
+}
+
+#submit {
+
+    margin-top: 10px;
+
+    width: 100px;
+
+    position: relative;
+
+    height: 30px;
+
+    border: none;
+
+    background-color: rgb(70, 250, 103);
+
+    box-shadow: 1px 2px 10px white;
+
+    border-radius: 12px;
+
+    left: 180px;
+
+    cursor: pointer;
+
+    transition: transform 0.5s;
+}
+
+#submit:hover {
+    transform: scale(1.04);
+    box-shadow: 1px 2px 3px rgb(172, 160, 75) ;
+}
+
+#dateOfvisit{
+    position: relative;
+
+    left:-89px
+}
+
+.planetLabelId{
+    left: -89px;
+    color: rgba(255, 255, 255, 0.986);
+    
+        cursor: pointer;
+    
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+        position: relative;
+
+        font-variant: small-caps;
+}
+
+.msg{
+    color:rgb(253, 228, 35);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+}
+
+ .inputs:focus{
+    font-size: 14px;
+    border: none;
+ }
+
+::-webkit-scrollbar {
+
+    height: 0px;
+
+}

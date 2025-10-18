@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+
+<body>
+
+    <div id="loading" style="display: block;">
+
+        <video id="video" autoplay muted loop>
+
+            <source src="/video/228645.mp4">
+
+        </video>
+
+    </div>
+
+    <div id="container" style="display: none;">
+        <div id="formDiv">
+
+            <h1>Visit Earth👽</h1>
+
+            <div class="group">
+                <table>
+                    <tr>
+                        <label class="label" style="left:-117px" for="name"  > Name</label>
+
+
+                        <th id="thName">
+                            <input class="inputs" id="name" type="text">
+                        </th>
+                    </tr>
+
+                </table>
+              
+            </div>
+
+            <div class="group">
+
+                <table>
+                    <tr>
+
+                        <label class="label" for="ante"> Antena</label>
+
+                        <th id="ageTh">
+                            <input class="inputs" id="ante" type="Number">
+                        </th>
+                    </tr>
+                </table>
+
+                <font  style="display: none;" id="anteMsg" class="msg">msg</font>
+
+            </div>
+
+
+
+            <div class="group">
+
+                <table>
+                    <tr>
+                            <label style="left: -128px; position: relative;" class="label" for="id"> ID</label>
+                        
+                        <th id="idTh">
+                            <input class="inputs" id="id" type="text">
+                        </th>
+                    </tr>
+                </table>
+
+                <div style="display: none;" id="idMsg" class="msg">msg</div>
+            </div>
+
+
+
+            <div class="group">
+
+                <table>
+                    <tr>
+                       
+                            <font class="planetLabelId">Planet Name</font>
+                    
+                        <th>
+                            <select class="inputs" name="" id="planet">
+                        </th>
+                    </tr>
+                </table>
+
+                </select>
+
+                
+            </div>
+
+            <div class="group">
+
+                <table>
+                    <tr>
+                       
+                            <label class="label" for="type">Pharse</label>
+                        
+                        <th id="Thtype">
+                            <input class="inputs" id="type" type="text">
+                        </th>
+                    </tr>
+                </table>
+
+                <font style="display: none;" id="phMsg" class="msg">msg</font>
+            </div>
+
+
+
+            <div class="group">
+                <table>
+                    <tr>                       
+                            <label id="dateOfvisit" class="label" for="date">Date Of Visit</label>
+
+                        <th>
+                            <input class="inputs" type="date" name="" id="date">
+
+                        </th>
+                    </tr>
+                </table>
+
+                <font style="display: none;" id="dateMsg" class="msg">msg</font>
+            </div>
+                
+            <div class="group">
+            
+                <input id="submit" value="Submit🚀" type="submit">
+
+                <font style="display: none;" id="show" class="msg">Fill To Show</font>
+            
+            </div>
+
+        </div>
+
+       
+    </div>
+
+
+
+    <script src="/js/formValidate.js"></script>
+
+</body>
+
+</html>

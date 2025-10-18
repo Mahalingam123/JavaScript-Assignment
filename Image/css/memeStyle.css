@@ -1,0 +1,159 @@
+
+#meme{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+
+}
+#container{
+    background:none;
+}
+
+    body {
+        background-image: url("/Images/4912917.jpg");
+        background-size: cover;         
+        background-position: center;    
+        background-repeat: no-repeat;   
+    }
+
+
+
+
+
+#memeText{
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+h1{
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 50px;
+}
+
+#gen{
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 19px #000;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.catDiv{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    transition: 1s ease-in-out;
+
+}
+.catDiv:hover{
+    transform: scale(1.03);
+}
+.catDialouge{
+    position: relative;
+    top: 200px;
+    background-color: beige;
+    border-radius: 20px;
+    font-family: "Book Antiqua",serif;
+    left: 30px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.dogDialouge {
+    position: relative;
+    top: 160px; 
+    background: none;
+    border-radius: 20px;
+    font-family: "Book Antiqua", serif;
+    left: 30px;
+    width: 300px;
+    font-size: 30px;
+}
+
+.catEdit{
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 1px 1px 19px #000;
+    transition: 1s ease-out;
+
+}
+
+.catDel{
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 1px 1px 19px #000;
+    transition: 1s ease-out;
+    margin-left: 20px;
+}
+.catDel:hover{
+    transform: scale(1.2);
+}
+.catEdit:hover{
+    transform: scale(1.2);
+}
+
+
+.diwaliText1{
+    position: relative;
+
+    top:333px;
+
+    background-color: bisque;
+
+    width: 100px;
+    
+    left: 90px;
+
+    border-radius: 10px;
+     
+    font-size: 15px;
+
+
+}
+
+.diwaliText2 {
+    position: relative;
+
+    background-color: bisque;
+
+    width: 150px;
+
+    left: 240px;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    top: 270px;
+
+
+}
