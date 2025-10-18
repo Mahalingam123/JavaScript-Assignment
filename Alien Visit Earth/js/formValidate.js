@@ -36,11 +36,11 @@ let index = 0;
 
 setInterval(() => {
 
-    document.body.style.backgroundImage = `url('${images[index]}')`;
-
+    index = (index + 1) % images.length;
+    
     document.body.style.transition = "background 3s ease";
 
-    index = (index + 1) % images.length;
+    document.body.style.backgroundImage = `url('${images[index]}')`;
 
 }, 16000); 
 
