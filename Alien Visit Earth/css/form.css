@@ -98,7 +98,7 @@ body {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    border-radius: 15px;
+    border-radius: 25px;
 
     box-shadow: 1px 1px 14px rgb(220, 218, 218);
 
@@ -116,7 +116,7 @@ body {
 
 }
 #formDiv:hover{
-      transform: scale(1.08);
+      transform: scale(1.04);
 
     box-shadow: 1px 1px 14px rgb(68, 245, 242);
       
@@ -232,6 +232,11 @@ body {
     color:rgb(253, 228, 35);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: none;
+}
+
+#dateMsg{
+    position: relative;
+    left: 20px;
 }
 
  .inputs:focus{

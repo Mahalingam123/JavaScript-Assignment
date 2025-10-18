@@ -23,6 +23,29 @@ window.addEventListener('load', () => {
 
 })
 
+
+
+const images = [
+    "/img/dark-planet-space-landscape.jpg",
+    "/img/bermuda-triangle-mystery-event (1).jpg",
+    "/img/dark-planet-space-landscape (1).jpg",
+    "/img/3d-rendering-dark-earth-space.jpg"
+];
+
+let index = 0;
+
+setInterval(() => {
+
+    document.body.style.backgroundImage = `url('${images[index]}')`;
+
+    document.body.style.transition = "background 3s ease";
+
+    index = (index + 1) % images.length;
+
+}, 16000); 
+
+
+
 async function fetchPlanetName() {
 
     try {
@@ -72,20 +95,19 @@ const phrase = document.getElementById("type");
 
 const date = document.getElementById("date");
 
-const show=document.getElementById("show");
+const show = document.getElementById("show");
 
-let allCorrect=false;
+let allCorrect = false;
 
 
-setInterval(()=>{
+setInterval(() => {
     if (id.value != "" && names.value != "" && antena.value != "" && planet.value != "" && phrase.value != "" && date.value != "") {
 
         submit.style.display = "block";
-        
+
         show.style.display = "none";
 
-        submit.onmouseover = function () 
-        {
+        submit.onmouseover = function () {
             submit.style.display = "block";
         };
 
@@ -103,12 +125,12 @@ setInterval(()=>{
 
         };
 
-        
+
 
     }
-},500);
+}, 500);
 
-antena.addEventListener('input',() => {
+antena.addEventListener('input', () => {
     setInterval(() => {
         if (antena.value % 2 != 0) {
 
@@ -132,8 +154,8 @@ antena.addEventListener('input',() => {
     }, 200)
 })
 
- 
-id.addEventListener('input',()=>{
+
+id.addEventListener('input', () => {
 
     if (!id.value) return;
 
@@ -161,8 +183,8 @@ id.addEventListener('input',()=>{
     }
 });
 
-phrase.addEventListener('input',()=>{
-   
+phrase.addEventListener('input', () => {
+
     if (!phrase.value) return;
 
     if (!/^(?=.*[.,!?@#\$%\^&*\(\)_\-])(?=.*[\u{1F300}-\u{1FAFF}\u{1F600}-\u{1F64F}])[A-Za-z.,!?@#\$%\^&*\(\)_\-\u{1F300}-\u{1FAFF}\u{1F600}-\u{1F64F}]+$/u
@@ -193,7 +215,7 @@ phrase.addEventListener('input',()=>{
 });
 
 
-date.addEventListener('change',()=>{
+date.addEventListener('change', () => {
 
     if (!date.value) return;
 
@@ -225,13 +247,13 @@ date.addEventListener('change',()=>{
 
 submit.addEventListener("click", (e) => {
 
-      if(allCorrect){
+    if (allCorrect) {
         alert("Registerd Successfully press Ok to Continue");
         window.location.reload();
-      }
-      else{
+    }
+    else {
         e.preventDefault();
-      }
+    }
 
 });
 
